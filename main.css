@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Luckiest Guy';
-    src: url('https://github.com/tatoyjanerose/website-asset/raw/refs/heads/main/LuckiestGuy-Regular.ttf') format('truetype'), url(assets/font/Luckiest_Guy/LuckiestGuy-Regular.ttf) format('truetype');
+    src: url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap") rel="stylesheet";
 }
 
 :root{
