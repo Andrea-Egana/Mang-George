@@ -1,0 +1,64 @@
+.AbtHeading{
+    margin-top: 50px;
+    color: var(--text-color);
+    text-align: center;  
+    line-height: 1.6;
+}
+.AbtIntro{
+    color:rgb(2, 14, 38);
+    display: inline-block;
+    text-align: left; 
+    margin-top: 15px;
+    line-height: 1.6;
+    min-width: 600px;
+    
+}
+.Abtcontainer{
+    background-image: url(https://github.com/tatoyjanerose/website-asset/blob/main/bg-deds.png?raw=true);
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    width: 80%;
+    min-height: 80vh; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .Abtcontainer {
+    width: 95%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .AbtIntro {
+    min-width: auto;
+    font-size: 0.9rem;
+  }
+
+  .AbtHeading h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Abtcontainer {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .AbtIntro {
+    font-size: 0.8rem;
+  }
+
+  .AbtHeading h1 {
+    font-size: 1.2rem;
+  }
+
+  .AbtHeading {
+    margin-top: 20px;
+  }
+}

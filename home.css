@@ -1,0 +1,21 @@
+.videohome{
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.GameIntro{
+    color:rgb(2, 14, 38);
+    text-align: center;
+    line-height: 1.6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.Hometext{
+    margin-top: 20px;
+    color: var(--text-color);
+    text-align: center;
+    
+}

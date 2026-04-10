@@ -1,0 +1,214 @@
+.LevelWrapper{
+  background-color: var(--cream-bg);
+  padding: 20px;
+  margin: 40px auto;
+  width: 1200px;
+  height: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .LevelWrapper {
+    width: 90%;
+    height: 600px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .LevelWrapper {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .LevelCarousel {
+    height: auto;
+    min-width: max-content;
+  }
+
+  .LevelCarousel .Slides {
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .imgContainer{
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .about {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .carouselButton {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+  }
+
+  .LevelCarousel .Slides .imgContainer {
+    flex: none;
+    height: auto;
+    max-height: 300px;
+  }
+
+  .LevelCarousel .Slides .imgContainer img {
+    object-fit: contain;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .LevelWrapper {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .LevelCarousel {
+    height: auto;
+    min-width: max-content;
+  }
+
+  .LevelCarousel .Slides {
+    height: auto;
+    padding-bottom: 0;
+  }
+  .imgContainer{
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .about {
+    font-size: 0.8rem;
+  }
+
+  .CarouselNav {
+    padding: 10px 0;
+    position: relative;
+    bottom: auto;
+  }
+
+  .LevelCarousel .Slides .imgContainer {
+    flex: none;
+    height: auto;
+    max-height: 250px;
+  }
+
+  .LevelCarousel .Slides .imgContainer img {
+    object-fit: contain;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 250px;
+  }
+}
+
+
+.LevelCarousel{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.LevelCarousel .Slides{
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: 1.2%;
+  background: var(--cream-bg);
+  padding: 20px 0 100px 0;
+}
+
+.LevelCarousel .Slides.Slides--selected{
+  display: flex;
+}
+
+.LevelCarousel .Slides .imgContainer{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LevelCarousel .Slides .imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.imgContainer--selected{
+    border-color: var(--accent-red);
+    box-shadow: 0 0 0 4px rgba(165, 43, 43, 0.25);
+}
+
+.imgContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+.name{
+    color: var(--text-color);
+    text-align: center;
+
+}
+
+.about{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.CarouselNav{
+  height: 20px;
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    text-align: center;
+}
+
+.carouselButton{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: rgb(107, 106, 106);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carouselButton--selected{
+    background:var(--accent-red)
+}
